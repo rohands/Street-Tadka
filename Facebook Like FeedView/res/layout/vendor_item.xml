@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+	<!--  ListRow Left sied profilepic image -->
+	<LinearLayout
+	    android:id="@+id/profilepic"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:padding="3dip" >
+        
+	   
+    
+		<com.android.volley.toolbox.NetworkImageView   
+			android:id="@+id/userPic"   
+	        android:layout_width="50dip"
+	        android:layout_height="50dip"
+	        android:scaleType="fitCenter" >
+	      </com.android.volley.toolbox.NetworkImageView>
+        
+	</LinearLayout>
+    
+	<!-- Title Of Song-->
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profilepic"
+        android:layout_toRightOf="@+id/profilepic"
+        android:text="Username..."
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+	<!-- Artist Name -->
+
+    <TextView
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profilepic"
+        android:layout_below="@+id/user_name"
+        android:layout_toRightOf="@+id/profilepic"
+        android:text="Comments..."
+        android:textColor="#343434"
+        android:textSize="20sp" />
+
+    </RelativeLayout>

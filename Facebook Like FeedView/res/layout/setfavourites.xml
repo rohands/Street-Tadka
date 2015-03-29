@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   
+ >
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/chaatsCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Chaats" 
+                
+                android:textSize="20dp"/>
+            <CheckBox
+                android:id="@+id/puffsCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Puffs" 
+               
+                android:textSize="20dp"/>
+            <CheckBox
+                android:id="@+id/rollsCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Rolls" 
+                
+                android:textSize="20dp"/>
+            <CheckBox
+                android:id="@+id/dosasCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Dosas" 
+                
+                android:textSize="20dp"/>
+            <CheckBox
+                android:id="@+id/sweetsCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Sweets" 
+                
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+    
+
+</RelativeLayout>

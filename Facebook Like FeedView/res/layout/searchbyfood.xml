@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#FFF"
+    android:orientation="vertical" 
+    >
+    
+<!--   <EditText
+    android:id="@+id/editText1"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/button1"
+    android:alpha="0.5"
+    android:background="#FFF"		
+    android:ems="10" />
+				
+
+                    <Button
+                        android:id="@+id/button1"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/scrollView1"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Search" />--> 
+
+                    <ScrollView
+                        android:id="@+id/scrollView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/editText1"
+                        android:layout_centerHorizontal="true" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="0dp" >
+                            
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:background="#FFF"
+                android:layout_gravity="center"
+                android:text="Scroll down to explore catagories"
+                />
+
+                           
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="120dp"
+                                android:shadowColor="#000"
+                                android:shadowRadius="9"
+                                android:textSize="25dp"
+                                android:textColor="#FFF"
+                                android:text="Chaats"
+                                android:background="@drawable/chaats"
+                                android:textStyle="bold"
+                                
+                                android:layout_marginBottom="10dp"/>
+                            
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:text="Puffs"
+                                android:background="@drawable/puffs"
+                                android:textStyle="bold"
+                                android:textSize="25dp"
+                                android:layout_marginBottom="10dp" 
+                                android:shadowColor="#000"
+                                android:shadowRadius="9"
+                                
+                                android:textColor="#FFF"
+                                />
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:text="Rolls" 
+                                android:background="@drawable/rolls"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="25dp"
+                                android:shadowColor="#000"
+                                android:shadowRadius="9"
+                                
+                                android:textColor="#FFF"/>
+                             <Button
+                                android:id="@+id/button5"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:text="Dosas" 
+                                android:background="@drawable/dosas"
+                                android:textStyle="bold"
+                                android:textSize="25dp"
+                                android:layout_marginBottom="10dp"
+                                android:shadowColor="#000"
+                                android:shadowRadius="9"
+                                
+                                android:textColor="#FFF"
+                                />
+                              <Button
+                                android:id="@+id/button6"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:text="Sweets"
+                                android:textStyle="bold"
+                                android:background="@drawable/sweets"
+                                android:layout_marginBottom="10dp"
+                                android:shadowColor="#000"
+                                android:textColor="#FFF"
+                                android:shadowRadius="9"
+                                android:textSize="25dp"
+                                
+                                />
+                              <Button
+                                android:id="@+id/button7"
+                                android:layout_width="fill_parent"
+                                android:layout_height="120dp"
+                                android:shadowColor="#000"
+                                android:shadowRadius="9"
+                                android:textSize="25dp"
+                                android:textColor="#FFF"
+                                android:text="Drinks"
+                                android:background="@drawable/juices"
+                                android:textStyle="bold"
+                                
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+                    </ScrollView>
+                   
+    <!-- SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:content="@+id/content"
+        android:handle="@+id/handle" 
+        >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:alpha="0.5"
+            
+             />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="459dp"
+             android:background="#313131"
+             android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/naruto" />
+
+
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Naruto"
+                android:textColor="#a5a5a5"/>
+            <TextView 
+                android:layout_width="wrap_content"
+               
+                android:layout_height="wrap_content"
+                android:text="naruto@anime.com"
+                android:textColor="#a5a5a5"
+                android:textStyle="bold"/>
+				<Button
+                                android:id="@+id/button9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Set favourite"
+                                android:textStyle="bold"/>
+
+				
+
+				<Button
+                                android:id="@+id/button10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Log Out"
+                                android:textStyle="bold"/>
+        </LinearLayout>
+    </SlidingDrawer-->
+                    
+                    
+
+
+                
+
+                </RelativeLayout>
